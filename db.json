@@ -1,0 +1,105 @@
+{
+  "employeelist": [
+    {
+      "id": 22,
+      "fname": "prashnt",
+      "lname": "adaf",
+      "eid": "101",
+      "jtitle": "gsfhfh",
+      "email": "thubeakshata7728@gmail.com",
+      "salary": "522555",
+      "city": "Mumbai suburban",
+      "skill": "dgsryryrt"
+    },
+    {
+      "id": 23,
+      "fname": "feger",
+      "lname": "grtry",
+      "eid": "100",
+      "jtitle": "bjgj",
+      "email": "thubeakshata7728@gmail.com",
+      "salary": "56895",
+      "city": "Mumbai suburban",
+      "skill": "gryry"
+    },
+    {
+      "id": 24,
+      "fname": "sakshi",
+      "lname": "sumne",
+      "eid": "52",
+      "jtitle": "frh",
+      "email": "thubeakshata7728@gmail.com",
+      "salary": "56895",
+      "city": "Mumbai suburban",
+      "skill": "gryreut"
+    },
+    {
+      "id": 25,
+      "fname": "Akshata",
+      "lname": "Thube",
+      "eid": "2",
+      "jtitle": "software dev",
+      "email": "thubeakshata7728@gmail.com",
+      "salary": "50000",
+      "city": "Parner",
+      "skill": "bhgyft bhjgyu"
+    }
+  ],
+  "empregister": [
+    {
+      "name": "Akshata Vasantrao Thube",
+      "mobile": "9689729127",
+      "email": "thubeakshata7728@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Ashlesha Vasantrao Thube",
+      "mobile": "+918329270927",
+      "email": "ash@gmail.com",
+      "password": "7894561",
+      "id": 2
+    }
+  ],
+  "adminregister": [
+    {
+      "name": "Akshata Vasantrao Thube",
+      "mobile": "9689729127",
+      "email": "thubeakshata7728@gmail.com",
+      "password": "77287728",
+      "id": 1
+    },
+    {
+      "name": "akshata",
+      "mobile": "09689729127",
+      "email": "thubeakshata7728@gmail.com",
+      "password": "akshata7728",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "roles": [
+    {
+      "roleId": 10,
+      "name": "manager"
+    },
+    {
+      "roleId": 20,
+      "name": "developer"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Register Form</h2>
+        <div class="d-flex">
+            <button class=" btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add User</button>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+      <h1><b>User Record</b></h1> 
+      <table  class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID No</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Employee ID</th>
+                <th scope="col">Job Title</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Email</th>
+                <th scope="col">City</th>
+                <th scope="col">Skills</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employeeData">
+                <td>{{emp.id}}</td>
+                <td>{{emp.fname}}</td>
+                <td>{{emp.lname}}</td>
+                <td>{{emp.eid}}</td>
+                <td>{{emp.jtitle}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.city}}</td>
+                <td>{{emp.skill}}</td>
+                <td>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="onEdit(emp)">Edit</button>
+                </td>
+                <!-- <td>
+                    <button class="btn btn-danger" (click)="deleteemployee(emp.id)">Delete</button>
+                </td> -->
+            </tr>
+        </tbody>
+      </table>  
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="row" style="margin-top:1%">	
+                    <div class="col-md-6">
+                    <label for="exampleInputName1" class="form-label">First Name</label>
+                    <input type="fname" class="form-control" formControlName="fname" id="exampleInputName1" aria-describedby="nameHelp">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="exampleInputName1" class="form-label">Last Name</label>
+                    <input type="lname" class="form-control" formControlName="lname" id="exampleInputName1" aria-describedby="nameHelp">
+                  </div>
+                </div>
+                
+                  <div class="row" style="margin-top:1%">
+                    <div class="col-md-6">
+                    <label for="exampleInputEmployee1" class="form-label">Employee Id</label>
+                    <input type="eid" class="form-control" formControlName="eid" id="exampleInputEmployee1" aria-describedby="employeeHelp">
+                  </div>
+                  <div class="col-md-6">
+                  <label for="exampleInputJob1" class="form-label">Job Title</label>
+                  <input type="jtitle" class="form-control" formControlName="jtitle" id="exampleInputJob1" aria-describedby="jobHelp">
+                </div>
+                </div>
+                <div class="row" style="margin-top:1%">
+                    <div class="col-md-6">
+                  <label for="exampleInputSalary1" class="form-label">Salary</label>
+                  <input type="salary" class="form-control" formControlName="salary" id="exampleInputSalary1">
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1">
+                  </div>
+            </div>
+            <div class="row" style="margin-top:1%">
+                <div class="col-md-6">
+              <label for="exampleInputCity1" class="form-label">City</label>
+              <input type="city" class="form-control" formControlName="city" id="exampleInputCity1">
+            </div>
+            <div class="col-md-6">
+                <label for="exampleInputSkill1" class="form-label">Skills</label>
+                <input type="skill" class="form-control" formControlName="skill" id="exampleInputSkill1">
+              </div>
+        </div>
+                <!-- <button type="submit" class="btn btn-primary">Add User</button> -->
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"  (click)=" postEmployeeDetails()">Add User</button>
+          <button type="button" class="btn btn-primary"  (click)=" updateEmployeeDetails()">Update User</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
